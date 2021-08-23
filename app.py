@@ -1,6 +1,6 @@
 from aiogram import executor
 from loader import dp
-import middlewares, handlers
+import middlewares, handlers, keyboards
 from utils.set_bot_commands import set_default_commands
 
 
