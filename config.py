@@ -1,3 +1,5 @@
 import os
 
-BOT_TOKEN = os.getenv('BOT_TOKEN')
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+DATABASE_USERNAME = os.getenv("DATABASE_USERNAME")
+DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
