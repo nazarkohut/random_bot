@@ -6,5 +6,6 @@ async def set_default_commands(dp):
         [
             types.BotCommand("start", "Start Bot"),
             types.BotCommand("help", "shows commands list"),
+            types.BotCommand("random_integer", "Generate random integer"),
         ]
     )
