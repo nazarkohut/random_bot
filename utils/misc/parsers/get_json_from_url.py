@@ -3,12 +3,13 @@ from aiogram.utils.json import json
 
 
 def to_db():  # this method was used to get json data
-    url = "url_with_json"
+    url = ""
     json_url = urlopen(url)
     data = json.loads(json_url.read())
-    s = list()
-    for lst in data.values():
-        for d in lst:
-            s.append(d['emoji'])
-    emojis = [i for i in s if len(i) == 1]
-    return emojis
+    res = list()
+    for d in data:
+        if d['category'] == 'Flags' and len(d['emoji']) <= 2:
+            res.append(d['emoji'])
+    return res
+
+

@@ -12,6 +12,7 @@ class DataBase:
             f'mongodb+srv://{username}:{password}@cluster.f7omn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
         self._database = self._client.get_database("database")
         self.emojis = self._database.get_collection("emojis")
+        self.flags = self._database.get_collection("flags")
 
     def add_emojis(self, lst):
         self.emojis.insert({'emojis_list': lst})
@@ -20,3 +21,11 @@ class DataBase:
         d = self.emojis.find({}, {'emojis_list': 1, '_id': 0})
         d = next(d)
         return d['emojis_list']
+
+    def add_flags(self, lst):
+        self.flags.insert({'flags': lst})
+
+    def get_flags_list(self):
+        d = self.flags.find({}, {'flags': 1, '_id': 0})
+        d = next(d)
+        return d['flags']
