@@ -11,7 +11,21 @@ class DataBase:
         self._client = pymongo.MongoClient(
             f'mongodb+srv://{username}:{password}@cluster.f7omn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
         self._database = self._client.get_database("database")
-        self.color = self._database.get_collection("color")
+        self.emojis = self._database.get_collection("emojis")
+        self.flags = self._database.get_collection("flags")
 
-    def add_color(self):
-        self.color.insert_one({'color': ''})
+    def add_emojis(self, lst):
+        self.emojis.insert({'emojis_list': lst})
+
+    def get_emojis_list(self):
+        d = self.emojis.find({}, {'emojis_list': 1, '_id': 0})
+        d = next(d)
+        return d['emojis_list']
+
+    def add_flags(self, lst):
+        self.flags.insert({'flags': lst})
+
+    def get_flags_list(self):
+        d = self.flags.find({}, {'flags': 1, '_id': 0})
+        d = next(d)
+        return d['flags']
