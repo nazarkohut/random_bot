@@ -1,1 +1,1 @@
-from . import get_json_from_url
+from . import json_parsers
