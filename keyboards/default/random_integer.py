@@ -1,4 +1,4 @@
-import random
+import numpy as np
 
 from aiogram import types
 from aiogram.dispatcher import FSMContext
@@ -18,7 +18,7 @@ async def get_limits(message: types.Message):
     elif len(data) == 3:
         if is_int(data[1]) and is_int(data[2]):
             a, b = read_and_swap(data)
-            await message.answer(str(random.randint(a, b)))
+            await message.answer(str(np.random.randint(a, b)))
         else:
             await message.reply("You entered wrong values, please try again with valid integers")
     else:
@@ -32,7 +32,7 @@ async def random_integer(message: types.Message, state: FSMContext):
     if len(data) == 2:
         if is_int(data[0]) and is_int(data[1]):
             a, b = read_and_swap(data)
-            await message.answer(str(random.randint(a, b)))
+            await message.answer(str(np.random.randint(a, b)))
         else:
             await message.reply("You entered wrong values, please try again with valid integers")
     else:
