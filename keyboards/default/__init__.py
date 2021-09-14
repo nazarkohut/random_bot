@@ -4,3 +4,4 @@ from . import random_emoji
 from . import random_country
 from . import random_image
 from . import random_gif
+from . import random_mem

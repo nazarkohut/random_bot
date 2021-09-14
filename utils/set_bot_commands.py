@@ -11,6 +11,7 @@ async def set_default_commands(dp):
             types.BotCommand("random_emoji", 'will random emojis'),
             types.BotCommand("random_country", "will random country by the national flag"),
             types.BotCommand("random_image", "will random image"),
-            types.BotCommand("random_gif", "will random gif")
+            types.BotCommand("random_gif", "will random gif"),
+            types.BotCommand("random_mem", "will random mem")
         ]
     )
