@@ -6,3 +6,4 @@ from . import random_image
 from . import random_gif
 from . import random_mem
 from . import random_color
+from . import random_my_choice
