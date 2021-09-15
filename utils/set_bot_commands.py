@@ -14,6 +14,7 @@ async def set_default_commands(dp):
             types.BotCommand("random_gif", "Will random gif"),
             types.BotCommand("random_mem", "Will random mem"),
             types.BotCommand("random_color", "Will random color with it's hex code"),
-            types.BotCommand("random_my_choice", "Will random one object from the sequence you've typed")
+            types.BotCommand("random_my_choice", "Will random one object from the sequence you've typed"),
+            types.BotCommand("random_admin", "Get random group administrator"),
         ]
     )
