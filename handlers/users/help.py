@@ -6,5 +6,6 @@ from loader import dp
 async def bot_help(message: types.Message):
     text = ("Commands: ",
             "/start - Start Bot",
-            "/help - Get commands list")
+            "/help - Get commands list",
+            )
     await message.answer("\n".join(text))
