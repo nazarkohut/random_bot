@@ -1,6 +1,11 @@
-<h1><img src="https://github.com/nazarkohut/readme_logos/blob/main/random_bot_readme.svg?raw=true" width="20"/>RandomBot</h1>
+<h1><img src="https://github.com/nazarkohut/readme_logos/blob/main/random_bot_readme.svg?raw=true" width="20"/>RandomBot - Making hard😩 decisions easy👌</h1>
 
-Telegram bot🤖 for making difficult decisions and fun. Written using Aiogram library, MongoDB was used as a database.
+<p align="left">
+    <a href="https://core.telegram.org/bots/api">
+    <img src="https://img.shields.io/badge/🤖-Telegram Bot-blue"alt="Telegram bots link">
+</p>
+
+The **ultimate tool🛠️** for making **difficult decisions** and **having a little fun**🤸🏻‍♀️! Written using [Aiogram](https://docs.aiogram.dev/en/latest/) library, [MongoDB](https://www.mongodb.com/home) was used as a database.
 
 ![Random Bot Telegram flow](https://github.com/nazarkohut/readme_logos/blob/random-bot-gif/random_bot.gif?raw=true)
 
