@@ -1,3 +1,6 @@
+"""
+Has method that replies with a random integer from user-defined range.
+"""
 import random
 
 from aiogram import types
@@ -16,7 +19,7 @@ SWAP_ACKNOWLEDGMENT_MESSAGE: str = "We used your second value as the minimum and
                                    "Please, be more precise next time⌛."
 
 
-@dp.message_handler(commands='random_integer')
+@dp.message_handler(commands="random_integer")
 async def get_limits(message: types.Message):
     data = message.text.split()
     if len(data) == 1:

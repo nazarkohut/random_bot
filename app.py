@@ -1,6 +1,13 @@
+"""
+Run this file to start the bot.
+"""
+# Do not remove these imports, because bot won't work!
+import keyboards  # pylint: disable=unused-import
+import handlers  # pylint: disable=unused-import
+import middlewares  # pylint: disable=unused-import
+
 from aiogram import executor
 from loader import dp
-import middlewares, handlers, keyboards
 from utils.set_bot_commands import set_default_commands
 
 

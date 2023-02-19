@@ -1,3 +1,6 @@
+"""
+Has method that swaps elements in case second one is larger than first.
+"""
 from typing import Tuple
 
 
