@@ -1,3 +1,6 @@
+"""
+Has a method that chooses one object from the user-defined list.
+"""
 import numpy as np
 from aiogram import types
 from aiogram.dispatcher import FSMContext

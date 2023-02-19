@@ -1,5 +1,6 @@
-import asyncio
-
+"""
+Throttling middleware is defined here.
+"""
 from aiogram import types, Dispatcher
 from aiogram.dispatcher import DEFAULT_RATE_LIMIT
 from aiogram.dispatcher.handler import CancelHandler, current_handler
@@ -12,10 +13,10 @@ class ThrottlingMiddleware(BaseMiddleware):
     Simple middleware
     """
 
-    def __init__(self, limit=DEFAULT_RATE_LIMIT, key_prefix='antiflood_'):
+    def __init__(self, limit=DEFAULT_RATE_LIMIT, key_prefix="antiflood_"):
         self.rate_limit = limit
         self.prefix = key_prefix
-        super(ThrottlingMiddleware, self).__init__()
+        super().__init__()
 
     async def on_process_message(self, message: types.Message, data: dict):
         handler = current_handler.get()
