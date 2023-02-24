@@ -23,6 +23,7 @@ async def set_default_commands(dp):
             types.BotCommand("random_fact", "Find out an interesting fact you didn't know📚"),
             types.BotCommand("random_my_choice", "Random one object from the sequence you've typed"),
             types.BotCommand("random_riddle", "Time🕛 to strain the brain🧠"),
+            types.BotCommand("random_youtube_video", "Random video from youtube"),
             types.BotCommand("random_admin", "Get random group administrator"),
         ]
     )
