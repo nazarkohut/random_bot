@@ -27,8 +27,9 @@ async def bot_help(message: types.Message):
             "/random_color - random color and its hex code",
             "/random_fact - find out an interesting fact you didn't know📚",
             "/random_my_choice - random one object👻 from the sequence you've typed",
-            "/random_riddle - time🕛 to strain the brain🧠"
-            "/random_youtube_video - random video from youtube"
+            "/random_riddle - time🕛 to strain the brain🧠",
+            "/random_youtube_video - random video from youtube",
+            "/random_recipe - random recipe🍜 to satisfy your taste😋",
             "/random_admin - get random group administrator👑",
             )
     await message.answer("\n".join(text))
