@@ -130,4 +130,5 @@ dmypy.json
 .idea/
 # Files for me
 resourses.txt
+utils/misc/parsers/data
 

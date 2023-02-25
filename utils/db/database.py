@@ -19,6 +19,7 @@ class DataBase:
         self._database = self._client.get_database("database")
         self.emojis = self._database.get_collection("emojis")
         self.flags = self._database.get_collection("flags")
+        self.videos = self._database.get_collection("youtube_videos")
 
     def add_emojis(self, lst):
         self.emojis.insert({"emojis_list": lst})
@@ -35,3 +36,5 @@ class DataBase:
         d = self.flags.find({}, {"flags": 1, "_id": 0})
         d = next(d)
         return d["flags"]
+
+
