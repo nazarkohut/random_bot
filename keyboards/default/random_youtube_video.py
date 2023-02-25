@@ -1,3 +1,6 @@
+"""
+Has method that sends url to random YouTube video.
+"""
 from utils.misc.additional_functions.random_video.get_random_channel_id import get_channel_id
 from aiogram import types
 from loader import dp

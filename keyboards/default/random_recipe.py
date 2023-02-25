@@ -2,6 +2,8 @@
 Method that can chose random receipt from spoonacular service.
 """
 from aiogram import types
+
+from keyboards.constants import COMMON_REQUEST_TIMEOUT
 from loader import dp
 from config import SPOONACULAR_API_KEY
 import requests
@@ -17,7 +19,7 @@ async def get_random_recipe(message: types.Message):
         "number": 1
     }
 
-    response = requests.get(base_url, params=params)
+    response = requests.get(base_url, params=params, timeout=COMMON_REQUEST_TIMEOUT)
 
     recipe_data = response.json()["recipes"][0]
     recipe_str = f"Random recipe: {recipe_data['title']}\nIngredients:\n"
