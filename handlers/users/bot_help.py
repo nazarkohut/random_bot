@@ -29,6 +29,7 @@ async def bot_help(message: types.Message):
             "/random_my_choice - random one object👻 from the sequence you've typed",
             "/random_riddle - time🕛 to strain the brain🧠"
             "/random_youtube_video - random video from youtube"
+            "/random_recipe - random recipe"
             "/random_admin - get random group administrator👑",
             )
     await message.answer("\n".join(text))

@@ -21,3 +21,4 @@ from . import random_hobby
 from . import random_riddle
 from . import random_joke
 from . import random_youtube_video
+from . import random_recipe
