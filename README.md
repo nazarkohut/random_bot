@@ -28,16 +28,23 @@ Here is a list of all available commands🙉:
 * `/random_integer`  -  asks to enter range in format <int: min_integer> <int: max_integer> and then generates random integer.
 * `/random_integer <int: min_integer> <int: max_integer>`  -  to do it quicker🚀.
 * `/random_answer` - randoms Yes or No.
+* `/random_joke` - randoms joke to cheer🍻 you up.
 * `random_country ` - randoms country(shows country flag as a country identifier).
 * `/random_image` - randoms beautiful🥀 image.
 * `/random_gif`  -  randoms gif.
-* `/random_mem` - randoms mem gif.
+* `/random_hobby` - randoms a hobby🏓 that may become a part of you😮.
+* `/random_mem` - randoms mem gif😎.
 * `/random_color` - randoms color and its hex code.
+* `/random_fact` - randoms interesting fact you didn't know📚.
 * `/random_my_choice` - asks to enter sequence of items to random in format <item1> <item2> and so on. After this randoms one object from the sequence you've typed.
 * `/random_my_choice <item1> <item2> <item3>` - to do it quicker🚀.
+* `/random_riddle` - randoms riddle to strain your brain🧠.
+* `/random_youtube_video` - randoms video🎬 from YouTube.
+* `/random_recipe` - randoms recipe🍜 to satisfy your taste😋.
 ## Authors
  * [Nazar Kohut](https://github.com/nazarkohut) (author✍️ of the idea💡 and leader of the team)
  * [Bohdan Salabay](https://github.com/salabay777) (really cool🥶 guy, it is easy🐍 to get along with him)
+ * [Roman Ostrovskyi](https://github.com/RomanOstrovskyi) (creative🎨 and responsible😊 person, he generates new ideas on fly✈️ and always ready to help🙈)
 
 ### Have an idea on how to improve our bot?
 ##### Reach out to me, I will be really happy to hear👂 you out.
